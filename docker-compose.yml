@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  model-generator:
+    container_name: model_generator
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    ports:
+      - 8086:8086
+    tty: true
