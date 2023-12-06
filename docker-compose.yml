@@ -15,4 +15,6 @@ services:
               capabilities: [gpu]
     ports:
       - 8086:8086
+      - 8086:8086/udp
     tty: true
+    restart: always           # 常に再起動
