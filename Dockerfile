@@ -8,6 +8,10 @@ libreadline-dev libffi-dev libgdbm-dev liblzma-dev \
 libncursesw5-dev libsqlite3-dev libssl-dev \
 zlib1g-dev uuid-dev tk-dev libxkbcommon-x11-0 \
 lsof
+RUN apt install -y libnss3-tools && \
+wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-arm64 && \
+chmod +x mkcert-v1.4.4-linux-arm64 && \
+mv mkcert-v1.4.4-linux-arm64 /usr/local/bin/mkcert
 
 #pythonのインストール
 RUN wget https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz\

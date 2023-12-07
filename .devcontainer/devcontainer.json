@@ -5,7 +5,7 @@
   // "shutdownAction": "none",
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.python","ms-toolsai.jupyter","donjayamanne.git-extension-pack"]
+      "extensions": ["ms-python.python","ms-toolsai.jupyter","donjayamanne.git-extension-pack","github.copilot"]
     }
   },
   // Open the sub-folder with the source code
